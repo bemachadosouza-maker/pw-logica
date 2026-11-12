@@ -1,5 +1,9 @@
-nome = "Bernardo"
-sobrenome = "Machado"
+nome_completo = "Bernardo Machado"
+idade = 14
+pergunta1 = "Qual seu nome?"
+pergunta2 = "Qual sua idade?"
 
-
-print(nome,sobrenome)
+print(pergunta1)
+print(nome_completo)
+print(pergunta2)
+print(idade)
