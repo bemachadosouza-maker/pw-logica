@@ -1,9 +1,22 @@
-nome_completo = "Bernardo Machado"
-idade = 14
-pergunta1 = "Qual seu nome?"
-pergunta2 = "Qual sua idade?"
+esporte = "Futsal"
+local = "Casa"
+animal = "Cachorro salsicha"
+comida = "Arroz com Feijão"
+marca = "Nike"
+
+pergunta1 = "Esporte favorito?"
+pergunta2 = "local favorito?"
+pergunta3 = "Animal favorito?"
+pergunta4 = "Comida favorita?"
+pergunta5 = "Marca favorita?"
 
 print(pergunta1)
-print(nome_completo)
+print(esporte)
 print(pergunta2)
-print(idade)
+print(local)
+print(pergunta3)
+print(animal)
+print(pergunta4)
+print(comida)
+print(pergunta5)
+print(marca)
