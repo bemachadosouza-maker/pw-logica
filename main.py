@@ -1,9 +1,7 @@
-nome = "Bernardo"
-idade = 14
-altura = 1.71
-aprovado = True
+a = 42
+b = 67
 
-print(type(nome))
-print(type(idade))
-print(type(altura))
-print(type(aprovado))
+print(f"(a) + (b) = {a + b}")
+print(f"(a) - (b) = {a - b}")
+print(f"(a) x (b) = {a * b}")
+print(f"(a) / (b) = {a / b}")
