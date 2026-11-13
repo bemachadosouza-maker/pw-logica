@@ -1,6 +1,9 @@
-valor = 15.6789
 
-print(f"{valor}")
-print(f"{valor: .1f}")
-print(f"{valor: .2f}")
-print(f"{valor: .3f}")
+print("=== CONVERSOR DE KB PARA MB ===")
+KB = float(input("Distancia em KB: "))
+MB = KB / 1024
+print(F"{KB} KB = {MB: .2f} MB: ")
+
+MB = float(input("Distancia em GB: "))
+GB = MB / 1024
+print(F"{MB} MB = {GB: .2f} GB: ")
