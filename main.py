@@ -1,9 +1,12 @@
+print("=== CALCULADORA DE DESCONTO ===")
+produto = input("Nome do produto: ")
+preco = float(input("Preço: R$ "))
+desconto = float(input("Desconto (%): "))
 
-print("=== CONVERSOR DE KB PARA MB ===")
-KB = float(input("Distancia em KB: "))
-MB = KB / 1024
-print(F"{KB} KB = {MB: .2f} MB: ")
+valor_desconto = preco * (desconto / 100)
+preco_final = preco - valor_desconto
 
-MB = float(input("Distancia em GB: "))
-GB = MB / 1024
-print(F"{MB} MB = {GB: .2f} GB: ")
+print(F"\nProduto: {produto}")
+print(F"Preço Original: R$ {preco: .2f}")
+print(F"Desconto: R$ {valor_desconto: .2f}")
+print(F"Preço Final: R$ {preco_final: .2f}")
