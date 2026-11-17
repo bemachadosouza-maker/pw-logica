@@ -1,12 +1,11 @@
-num1 = float(input("Digite um valor: "))
-num2 = float(input("Digite um valor: "))
+nota = float(input("Sua nota: ").replace(",", "."))
 
-soma = num1 + num2
-subt = num1 - num2
-mult = num1 * num2
-div = num1 / num2
+if nota == 10:
+    print("Nossa parabens")
 
-print("o resultado da soma é:",soma)
-print("o resultado da subtração é:",subt)
-print("o resultado da multiplicação é:",mult)
-print("o resultado da divisão é:",div)
+elif nota != 0:
+    print("Foi mal em")
+
+if nota >= 7:
+ print("Boua")
+    
