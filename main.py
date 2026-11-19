@@ -1,17 +1,25 @@
-print("=== PAR OU IMPAR ===")   
-nome1 = input("Nome do jogador 1: ")
-nome2 = input("Nome do jogador 2: ")
-escolha = input(f"{nome1}. Você escolhe (par/impar): ") .lower()
 
-n1 = int(input(f"{nome1}. seu número: "))
-n2 = int(input(f"{nome2}. seu número: "))
+print("=== CINEMA ===")
 
-soma = n1 + n2
-resultado = "par" if soma % 2 -- O else "impar"
+preco = 30.00
 
-print(f"\n{n1} + {n2} = {soma} ({resultado})")
+dia = input("Qual o dia da semana? ").lower()
 
-if escolha == resultado:
-    print(f"{nome1} ganhou!")
+tipo = input("Digite inteira ou meia: ").lower()
+
+if tipo == "meia":
+    valor = preco * 0.5
+
+elif tipo == "inteira":
+    valor = preco
+
 else:
-    print(f"{nome2} ganhou!")
+    print("Tipo de ingresso inválido!")
+    valor = 0
+
+if dia == "quarta":
+    valor = valor * 0.5
+    print("Promoção de quarta-feira: 50% de desconto!")
+
+print("===== RESULTADO =====")
+print("Valor do ingresso: R$", valor)
