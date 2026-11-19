@@ -1,25 +1,23 @@
 
-print("=== CINEMA ===")
+print("===== CLASSIFICADOR DE TRIÂNGULOS =====")
 
-preco = 30.00
+a = float(input("Digite o primeiro lado: "))
+b = float(input("Digite o segundo lado: "))
+c = float(input("Digite o terceiro lado: "))
 
-dia = input("Qual o dia da semana? ").lower()
+if a + b > c and a + c > b and b + c > a:
 
-tipo = input("Digite inteira ou meia: ").lower()
+    print("É um triângulo válido!")
 
-if tipo == "meia":
-    valor = preco * 0.5
+    if a == b and b == c:
+        print("Triângulo equilátero")
 
-elif tipo == "inteira":
-    valor = preco
+    elif a == b or a == c or b == c:
+        print("Triângulo isósceles")
+
+    else:
+        print("Triângulo escaleno")
 
 else:
-    print("Tipo de ingresso inválido!")
-    valor = 0
+    print("Não deu um triângulo!")
 
-if dia == "quarta":
-    valor = valor * 0.5
-    print("Promoção de quarta-feira: 50% de desconto!")
-
-print("===== RESULTADO =====")
-print("Valor do ingresso: R$", valor)
