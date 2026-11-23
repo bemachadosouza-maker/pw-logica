@@ -1,23 +1,10 @@
-
-print("===== CLASSIFICADOR DE TRIÂNGULOS =====")
-
-a = float(input("Digite o primeiro lado: "))
-b = float(input("Digite o segundo lado: "))
-c = float(input("Digite o terceiro lado: "))
-
-if a + b > c and a + c > b and b + c > a:
-
-    print("É um triângulo válido!")
-
-    if a == b and b == c:
-        print("Triângulo equilátero")
-
-    elif a == b or a == c or b == c:
-        print("Triângulo isósceles")
-
-    else:
-        print("Triângulo escaleno")
-
-else:
-    print("Não deu um triângulo!")
-
+operacao = input(
+    "escolha a conversão:\n"
+    "1 - celsius para fahreneit\n"
+    "2 - quilometros para milhas\n"
+    "3 - reais para dolar\n"
+    "4 - quilogramas para libras\n")
+valor = float(input("Digite o valor que deseja converter: "))
+if operacao == "1":
+    resultado = (valor * 9/5) + 32
+    print(f"resultado: {resultado:.f}°F")
