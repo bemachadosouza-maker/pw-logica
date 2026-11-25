@@ -1,3 +1,4 @@
+import random
 numero_secretos = random.randint(1, 20)
 tentativas = 0
 palpite = int(input(
@@ -8,6 +9,9 @@ while palpite != numero_secretos:
     if palpite < numero_secretos:
         print("O numero secreto e maior!")
     else:
-        print("Onumero secreto e menor!")
+        print("O numero secreto e menor!")
         palpite = int(input("Tente novamente:"))
 tentativas = 1
+print("Parabens! você acertou!")
+print(f"O numero secreto era: {numero_secretos}")
+print(F"Você utilizou {tentativas} Tentativas.")
