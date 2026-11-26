@@ -1,13 +1,7 @@
-numero = int(input("Digite um numero inteiro positivo: "))
-pares = 0
-impares = 0
-
-for contador in range (1, numero + 1)
-
-    if contador % 2 == 0:
-        pares += 1
-    else:
-        impares += 1
-
-print(f"Quantidade de numeros pares {pares}")
-print(f"Quantidade de numeros impares {impares}")
+opcao = 0
+while opcao != 4:
+    print("\n ===== Meunu de operações=====")
+    print("1 - Mostrar mensagem de Boas-vindas!")
+    print("2 - Mostrar a tabuada de um número")
+    print("3 - Informar se um número é par ou impar")
+    print("4 - Sair")
