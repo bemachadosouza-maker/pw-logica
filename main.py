@@ -1,11 +1,6 @@
-alunos = {
-    "João" : 8,
-    "Maria" : 9,
-    "Bernardo" : 5,
-    "Pedro" : 6
-}
-for nome, nota in alunos.items():
-    if nota >= 7:
-        print(f"[nome] Está aprovado!")
-    else:
-        print(f"{nome} Esta reprovado!")
+filmes = ["pulp fictions", "Era do Gelo", "Gente grande", "Toy Story", "Harry Potter"]
+
+print("Lista completa de filmes: \n {filmes}")
+print(f"\nO primeiro filme é {filmes[0]}")
+print(f"\nO primeiro filme é {filmes[4]}")
+print(f"\nA quantidade de filmes é {len(filmes)}")
